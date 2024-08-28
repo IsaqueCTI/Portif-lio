@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css" href="CSS/style.css">
+    <script src="./JS/scripts.js" defer ></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+    <title>Home</title>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="cabecalho">
+                <div></div><div></div><div></div><div></div>
+                <div class="opcao">
+                    <a href="#" id="btnopcao">Contato</a>
+                </div>
+                <div class="opcao">
+                    <a href="#" id="btnopcao">Projetos</a>
+                </div>
+                <div class="opcao">
+                    <a href="#" id="btnopcao">Habilidades</a>
+                </div>
+                <div></div><div></div><div></div><div></div>
+            </div> <!-- div: cabecalho -->
+
+            <div id="particle-container">
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+            </div>
+
+            <div class="titulo">
+                <div class="content-titilo">
+                    
+                    <div>
+                        <h1>Olá,</h1>
+                        <div class="titulo-nome">                            
+                            <h1>eu sou o</h1>
+                            <h2>Isaque</h2>
+                            <h1>!</h1>
+                        </div>
+                        <p>
+                        Seja bem-vindo(a) ao meu portifólio, aqui conto com alguns projetos
+                        feitos por mim e em grupos.
+                        </p>
+
+                        <div class="links">
+                            <div class="facebook icon"></div>
+                            <div class="github icon"></div>
+                            <div class="instagram icon"></div>
+                        </div>
+                        <div class="btn-contato">
+                            <a href="#" id="btnc">Contato</a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div> <!-- div: titulo -->
+
+            <div class="sobremim">
+                <div class="foto-perfil">
+                    <img src="img/foto.png">
+                </div>
+                <p>Recém-formado em Informática no ano de 2023 e completamente apaixonado por desenvolvimento front-end. <br> Adoro a magia de transformar códigos em interfaces bonitas e funcionais, criando experiências que encantam e <br> facilitam a vida dos usuários.
+                <br> <br> Durante meus estudos, experimentei várias áreas da TI, mas foi no front-end que realmente me encontrei.</p>
+            </div> <!-- div: sobremim -->
+
+            <div class="skils">
+                <div class="sdescricao">
+                    <div class="titulosd">
+                        <h1>Hábilidades</h1>
+                        <h2>e Ferramentas</h2>
+                    </div>
+                    <p>Grande parte desenvolvida em cursos, sempre <br>
+                    buscando melhor eficiencia do meu trabalho.</p>
+                </div>
+                <div class="snomes">
+                    <div>
+                        <h1>CSS</h1>
+                        <h1>C#</h1>                        
+                        <h3>C++</h3>
+                    </div>
+                    <div>
+                        <h3>JavaScript</h3>                        
+                        <h2>Html5</h2>  
+                    </div>
+                    <div>
+                        <h1>SQL</h1>
+                        <h2>Figma</h2>                  
+                    </div>
+                    
+                </div>
+            </div> <!-- div: skils -->
+
+            <div class="projetos">
+                <div class="projeto-container">
+                    <a href="https://github.com/MatheusScarpim/WebBuilders" id="pc-link">
+                        <div class="pc-img">
+                            <img src="img/projeto.png">
+                        </div>
+                        <div class="pc-desc">
+                            <p>TCC - Gerenciamento de estoque</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="projeto-container">
+                    <a href="#" id="pc-link">
+                        <div class="pc-img">
+                            <img src="img/projeto2.png">
+                        </div>
+                        <div class="pc-desc">
+                            <p>E-commerce - Projeto de loja online/física</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="projeto-container">
+                    <a href="#" id="pc-link">
+                        <div class="pc-img">
+                            
+                        </div>
+                        <div class="pc-desc">
+
+                        </div>
+                    </a>
+                </div>
+
+            </div> <!-- div: projetos -->
+
+        </div> <!-- div: container -->
+
+        <script>
+            window.addEventListener('scroll', function() {
+            const sobremim = document.querySelector('.sobremim');
+            const scrollPosition = window.scrollY;
+
+            // Define a posição de rolagem para ativar a animação
+            const triggerPosition = 100; // ajuste conforme necessário
+
+            if (scrollPosition > triggerPosition) {
+                sobremim.classList.add('scroll');
+            } else {
+                sobremim.classList.remove('scroll');
+            }
+            });
+        </script>
+
+    </main>
+</body>
+</html>
