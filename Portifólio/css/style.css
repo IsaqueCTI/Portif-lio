@@ -174,7 +174,9 @@ body {
     text-decoration: none;
 }
 
-
+.tct-nome {
+    display: flex;
+}
 
 
 
@@ -958,45 +960,63 @@ body {
     background: #d97d26;
 }
 
+/* //////////////////////////////////////////////////////////// */
+/* Tela para celular */
 
-
-/* Estilos para telas menores (celulares) */
 @media (max-width: 768px) {
-    /* Container principal */
     .container {
-        padding: 20px;
     }
 
-    /* Ajuste do cabeçalho */
+    body {
+        height: 290vh;
+    }
+
     .cabecalho {
         display: flex;
         flex-direction: column;
         align-items: center;
+
+    }
+
+    .content-titulo {
+        padding: 40px;
+    }
+
+    .titulo p {
+        text-align: left !important;
+        margin: 0;
+        padding: 0;
+
     }
 
     .cabecalho .opcao {
         margin: 10px 0;
     }
 
-    /* Título */
     .titulo h1, .titulo h2 {
         font-size: 1.5em;
-        text-align: center;
+        text-align: left;
+    }
+
+    .tct-nome {
+        margin-top: -20px;
+        display: flex;
     }
 
     .titulo-nome {
         flex-direction: column;
-        align-items: center;
+        align-items: left;
     }
 
     .titulo p {
         text-align: center;
     }
 
-    /* Sobre mim */
     .sobremim {
+        height: 90vh;
         flex-direction: column;
         align-items: center;
+        padding: 40px;
     }
 
     .sobremim img {
@@ -1007,28 +1027,52 @@ body {
     .sobremim p {
         text-align: center;
         margin-top: 15px;
+        font-size: 12px;
+    }
+    .sdescricao p {
+        display: none;
+    }
+    
+    .sdescricao {
+        padding-right: 0px !important;
     }
 
-    /* Habilidades */
+    .titulosd {
+        display: block;
+    }
+
     .skils {
         flex-direction: column;
         align-items: center;
         text-align: center;
+        height: 50vh;
     }
 
     .snomes {
         flex-direction: column;
         gap: 20px;
+        margin-top: 40px;
     }
 
-    /* Projetos */
     .projeto-container {
         width: 100%;
         margin-bottom: 20px;
     }
+    .projetos {
+        display: list-item;
+    }
 
     .pc-img img {
         width: 100%;
-        height: auto;
+        height: 100%;
+
+        object-fit: cover; 
+        object-position: center;
+    }
+    .pc-desc {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 13px;
     }
 }
