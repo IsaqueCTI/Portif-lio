@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b229c171bc.js" crossorigin="anonymous"></script>
 
     <title>Home</title>
 </head>
@@ -18,13 +19,13 @@
             <div class="cabecalho">
                 <div></div><div></div><div></div><div></div>
                 <div class="opcao">
-                    <a href="#" id="btnopcao">Contato</a>
+                    <a class="btnopcao" href="#contatos-href">Contato</a>
                 </div>
                 <div class="opcao">
-                    <a href="#" id="btnopcao">Projetos</a>
+                    <a class="btnopcao" href="#projetos-href">Projetos</a>
                 </div>
                 <div class="opcao">
-                    <a href="#" id="btnopcao">Habilidades</a>
+                    <a class="btnopcao" href="#habilidade-href">Habilidades</a>
                 </div>
                 <div></div><div></div><div></div><div></div>
             </div> <!-- div: cabecalho -->
@@ -79,26 +80,43 @@
                         feitos por mim e em grupos.
                         </p>
 
-                        <div class="links">
-                            <div class="facebook icon"></div>
-                            <div class="github icon"></div>
-                            <div class="instagram icon"></div>
-                        </div>
+                        
                         <div class="btn-contato">
-                            <a href="#" id="btnc">Contato</a>
+                            <a href="#contatos-href" id="btnc">Contato</a>
                         </div>
                     </div>
                     
                 </div>
             </div> <!-- div: titulo -->
 
+            <div id="contatos-href" class="scroll-link"></div>
+
             <div class="sobremim">
-                <div class="foto-perfil">
-                    <img src="img/foto.png">
+                <div class="sm-top">
+                    <div class="foto-perfil">
+                        <img src="img/foto.png">
+                    </div>
+                    <p>Recém-formado em Informática no ano de 2023 e completamente apaixonado por desenvolvimento front-end. <br> Adoro a magia de transformar códigos em interfaces bonitas e funcionais, criando experiências que encantam e <br> facilitam a vida dos usuários.
+                    <br> <br> Durante meus estudos, experimentei várias áreas da TI, mas foi no front-end que realmente me encontrei.</p>
                 </div>
-                <p>Recém-formado em Informática no ano de 2023 e completamente apaixonado por desenvolvimento front-end. <br> Adoro a magia de transformar códigos em interfaces bonitas e funcionais, criando experiências que encantam e <br> facilitam a vida dos usuários.
-                <br> <br> Durante meus estudos, experimentei várias áreas da TI, mas foi no front-end que realmente me encontrei.</p>
-            </div> <!-- div: sobremim -->
+
+                <div id="habilidade-href" class="scroll-link"></div>
+
+                <div class="links">
+                    <div class="facebook icon">
+                        <a href="https://www.facebook.com/profile.php?id=100030372639895"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+
+                    <div class="github icon">
+                        <a href="https://github.com/IsaqueCTI"><i class="fa-brands fa-github"></i></a>
+                    </div>
+
+                    <div class="instagram icon">
+                        <a href="https://www.instagram.com/isaque.css/"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+
+            </div> <!-- div: sobremim -->            
 
             <div class="skils">
                 <div class="sdescricao">
@@ -126,6 +144,8 @@
                     
                 </div>
             </div> <!-- div: skils -->
+
+            <div id="projetos-href" class="scroll-link"></div>
 
             <div class="projetos">
                 <div class="projeto-container">
@@ -156,7 +176,7 @@
                             
                         </div>
                         <div class="pc-desc">
-
+                            <p>Em breve</p>
                         </div>
                     </a>
                 </div>
